@@ -130,7 +130,7 @@ Die Tests wurden mit JUnit geschrieben und überprüfen nur das input/output Ver
 
 3. Ausführen
    - Nun kannst du die ganze Klasse oder spezifische Testmethoden ausführen.
-   - (in Intellij) findest du den entsprechenden Run-Button auf der linken Seite.
+   - (in IntelliJ) findest du den entsprechenden Run-Button auf der linken Seite.
 
 ## Useful Links:
 
