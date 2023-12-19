@@ -94,7 +94,7 @@ Es ist auch möglich das ohne die toString Methode zu verwenden, jedoch schwerer
 
 Diese Liste soll nun eine Zahl verkehrt herum repräsentieren. Beispielsweise würde die Zahl 54321 als Liste so aussehen: [1] → [2] → [3] → [4] → [5]. (Least significant digit als erstes Element).
 
-Dabei gilt folgendes für alle `value` der Listenelemente:  $0 ≤= value ≤= 9$. Außerdem soll die Liste keine führende Nullen besitzen.
+Dabei gilt folgendes für alle `value` der Listenelemente:  $0 ≤= value ≤= 9$. Außerdem soll die Liste keine führende Nullen besitzen. Zudem negative Zahlen als Eingabe ignoriert werden.
 
 ### insert
 
