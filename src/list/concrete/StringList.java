@@ -54,19 +54,29 @@ public class StringList extends LinkedList<char[]> {
     @Override
     public void reverse(){
         super.reverse();
-
-        for (char[] item : this)
-            reverseRecursive(item, 0);
+        reverseRecursive(head);
     }
 
-    private void reverseRecursive(char[] arr, int counter) {
+    private void reverseRecursive(ListElement<char[]> current){
+        if(current == null){
+            return;
+        }
+        reverseArray(current.getValue());
+        reverseRecursive(current.getNext());
+    }
+
+    private void reverseArray(char[] arr){
+        reverseArrayRecursive(arr, 0);
+    }
+
+    private void reverseArrayRecursive(char[] arr, int counter) {
         if(counter  >= arr.length/2){
             return;
         }
         char tmp = arr[counter];
         arr[counter] = arr[arr.length - 1 - counter];
         arr[arr.length - 1 - counter] = tmp;
-        reverseRecursive(arr, counter + 1);
+        reverseArrayRecursive(arr, counter + 1);
     }
 
     @Override
