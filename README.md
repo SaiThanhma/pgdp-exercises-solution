@@ -94,7 +94,7 @@ Es ist auch möglich das ohne die toString Methode zu verwenden, jedoch schwerer
 
 Diese Liste soll nun eine Zahl verkehrt herum repräsentieren. Beispielsweise würde die Zahl 54321 als Liste so aussehen: [1] → [2] → [3] → [4] → [5]. (Least significant digit als erstes Element).
 
-Dabei gilt folgendes für alle `value` der Listenelemente:  $0 ≤= value ≤= 9$. Außerdem soll die Liste keine führende Nullen besitzen. Zudem negative Zahlen als Eingabe ignoriert werden.
+Dabei gilt folgendes für alle `value` der Listenelemente:  $0 ≤= value ≤= 9$. Außerdem soll die Liste keine führende Nullen besitzen.
 
 ### insert
 
@@ -104,7 +104,7 @@ Dabei gilt folgendes für alle `value` der Listenelemente:  $0 ≤= value ≤= 9
     
     [1] → [2] → [3] → [4] → [5] → [6] → [7] → [8] → [9]
     
-    Unsere List soll wie gesagt keine Zahl repräsentieren die führende Nullen hat. Außerdem sollen negative Zahlen nicht eingefügt werden.
+    Unsere List soll wie gesagt keine Zahl repräsentieren die führende Nullen hat. Zudem sollen negative Zahlen als Eingabe ignoriert werden.
     
 
 ### crossSum
