@@ -1,7 +1,6 @@
 package list.concrete;
 
 import list.LinkedList;
-import list.ListElement;
 
 public class TribonacciList extends LinkedList<Integer> {
     private Integer last;
