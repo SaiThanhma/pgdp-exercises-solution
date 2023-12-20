@@ -101,7 +101,7 @@ public class StringList extends LinkedList<char[]> {
         if(value.length <= counterValue){
            return true;
         }
-        if(string.charAt(counterString) != value[counterValue]){
+        if(string.length() <= counterString || string.charAt(counterString) != value[counterValue]){
             return false;
         }
         return machtesPattern(string, value, counterString + 1, counterValue + 1);
