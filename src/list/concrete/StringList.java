@@ -87,23 +87,23 @@ public class StringList extends LinkedList<char[]> {
         return containsRecursive(toString(), value, 0);
     }
 
-    private boolean containsRecursive(String string, char[] value, int counter){
-        if(string.length() - value.length < counter){
+    private boolean containsRecursive(String string, char[] value, int counterString){
+        if(string.length() <= counterString){
             return false;
         }
-        if(machtesPattern(string, value, counter)){
+        if(machtesPattern(string, value, counterString, 0)){
             return true;
         }
-        return containsRecursive(string, value, counter + 1);
+        return containsRecursive(string, value, counterString + 1);
     }
 
-    private boolean machtesPattern(String string, char[] value, int counter){
-        if(value.length - 1 <= counter){
-            return true;
+    private boolean machtesPattern(String string, char[] value, int counterString, int counterValue){
+        if(value.length <= counterValue){
+           return true;
         }
-        if(value[counter] != string.charAt(counter)){
+        if(string.charAt(counterString) != value[counterValue]){
             return false;
         }
-        return machtesPattern(string, value, counter + 1);
+        return machtesPattern(string, value, counterString + 1, counterValue + 1);
     }
 }
